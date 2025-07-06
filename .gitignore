@@ -75,3 +75,5 @@ dist/
 
 #google
 /config/google-store-key.json
+.firebase/
+.google-services.json
