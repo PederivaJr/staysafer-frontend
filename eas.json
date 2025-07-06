@@ -1,0 +1,41 @@
+{
+  "cli": {
+    "version": ">= 3.4.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+
+      "distribution": "internal"
+    },
+    "preview": {
+      "ios": {
+        "simulator": true
+      },
+      "android": {
+        "distribution": "internal"
+    },
+      "distribution": "internal"
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle",
+        "image": "latest"
+      },
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./config/google-store-key.json",
+        "track": "internal"
+      },
+      "ios": {
+        "appleId": "riccardo.pederiva@gmail.com",
+        "ascAppId": "6469057429",
+        "appleTeamId": "7BSD8F4ZP5"
+      }
+    }
+  }
+}
